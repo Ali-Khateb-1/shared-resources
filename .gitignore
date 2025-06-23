@@ -1,0 +1,4 @@
+# Ignore sensitive and non-production folders
+data/
+private/
+training_space/
