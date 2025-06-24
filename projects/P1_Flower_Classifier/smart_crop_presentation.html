@@ -5,19 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>مشروع القص الذكي والإدراك البصري</title>
 
-  <!-- الخط الموحد للمشروع -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- تضمين تنسيقات المشروع الموحدة -->
   <link rel="stylesheet" href="../../style/main.css" />
-
-  <!-- تضمين تأثير الخلفية البصرية -->
   <script src="../../scripts/matrix.js" defer></script>
+
+  <style>
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(0,0,0,0.95);
+      z-index: 1000;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- خلفية رقمية متحركة -->
   <canvas id="matrixCanvas"></canvas>
+
+  <!-- شعار Solvanix النابض -->
+  <div style="text-align:center; margin-top:20px;">
+    <img src="assets/solvanix_logo_clean.png" alt="شعار Solvanix" style="width:140px;" class="pulse-glow">
+  </div>
 
   <header>
     مشروع القص الذكي والإدراك البصري
@@ -26,40 +34,45 @@
   <main>
     <section style="padding: 40px; text-align: center;">
       <p>
-        هذا العرض يوضح مراحل معالجة الصورة باستخدام نموذج الإدراك البصري والقص الشعاعي، مع محاكاة توقعات التصنيف.
+        عرض بصري يُوضح تحوّلات النموذج الذكي من الصورة الأصلية إلى إدراك ممثّل.
       </p>
     </section>
 
     <section class="tools-container">
       <div class="tool-card">
         <h3>الصورة الأصلية</h3>
-        <img src="original_sample.jpg" style="width:100%; border-radius:8px;">
+        <img src="assets/original_sample.jpg" style="width:100%; border-radius:8px;">
       </div>
       <div class="tool-card">
         <h3>خريطة الإدراك البصري</h3>
-        <img src="saliency_map.jpg" style="width:100%; border-radius:8px;">
+        <img src="assets/saliency_map.jpg" style="width:100%; border-radius:8px;">
       </div>
       <div class="tool-card">
         <h3>إعداد لصيغة Reels</h3>
-        <img src="resized_reels.jpg" style="width:100%; border-radius:8px;">
+        <img src="assets/resized_reels.jpg" style="width:100%; border-radius:8px;">
       </div>
       <div class="tool-card">
         <h3>القص الشعاعي الذكي</h3>
-        <img src="radial_crop.jpg" class="pulse-glow" style="width:100%; border-radius:8px;">
+        <img src="assets/radial_crop.jpg" class="pulse-glow" style="width:100%; border-radius:8px;">
       </div>
     </section>
 
+    <!-- طبقتا الهوية البصرية بشكل متجاور -->
+    <section style="text-align:center; margin: 50px 0 20px;">
+      <img src="assets/solvanix_layer_base.png" alt="طبقة البُنية" style="width:180px; margin: 10px;">
+      <img src="assets/solvanix_layer_brain.png" alt="طبقة الإدراك" style="width:180px; margin: 10px;">
+    </section>
+
     <section style="padding: 40px; max-width: 900px; margin: auto;">
-      <h2 style="color:#FF9500;">تمكين مجتمعي عبر الذكاء الاصطناعي</h2>
+      <h2 style="color:#FF9500;">المعنى يتشكّل عبر الإدراك</h2>
       <p>
-        يندمج هذا المشروع في توجهات STEAM من خلال تطبيق أدوات الذكاء البصري في تحليل الصور تلقائيًا.
-        يمكن استثماره في التعليم، وتمكين صناع المحتوى والمجتمعات المحلية لإنتاج سرد بصري مؤثر.
+        حين تندمج التقنية مع البصيرة، يتكوّن منظور جديد لمعالجة الصورة: ليس فقط تصنيفًا، بل إعادة صياغة لرؤيتنا ضمن إيقاع بصري نابض.
       </p>
     </section>
   </main>
 
   <footer>
-    تصميم وإبداع بصري ضمن بيئة Solvanix ©
+    Solvanix ©
   </footer>
 
 </body>
